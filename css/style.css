@@ -2,21 +2,21 @@
 
 @font-face {
 	font-family:"NanumGothic";
-	src:url('/fonts/NanumGothic.eot');
-	src:url('/fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/NanumGothic.woff') format('woff'),
-	    url('/fonts/NanumGothic.ttf') format('truetype');
+	src:url('fonts/NanumGothic.eot');
+	src:url('fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/NanumGothic.woff') format('woff'),
+	    url('fonts/NanumGothic.ttf') format('truetype');
     src:local(※), 
-        url('/fonts/NanumGothic.woff') format('woff');
+        url('fonts/NanumGothic.woff') format('woff');
 }
 @font-face {
 	font-family:"Hanna";
-	src:url('/fonts/Hanna.eot');
-	src:url('/fonts/Hanna.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Hanna.woff') format('woff'),
-	    url('/fonts/Hanna.ttf') format('truetype');
+	src:url('fonts/Hanna.eot');
+	src:url('fonts/Hanna.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Hanna.woff') format('woff'),
+	    url('fonts/Hanna.ttf') format('truetype');
     src:local(※), 
-        url('/fonts/Hanna.woff') format('woff');
+        url('fonts/Hanna.woff') format('woff');
 }
 
 .container { width: 300px; }
