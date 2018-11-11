@@ -1,23 +1,62 @@
-@media (min-width: 1200px) {
-    .container {
-        width: 1000px;
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+    font-family: 'Hanna', serif;
+}
+
+.container { width: 250px; }
+.row { display: inherit; }
+.navbar-brand { margin-bottom: 3px; }
+.carousel-item { width: 200px!important; }
+a.anchor {
+    display: block;
+    position: relative;
+    top: -120px;
+    visibility: hidden;
+}
+.emoticon_text { width: 150px; }
+.container .emoticon { padding: 0; width: 150px; }
+
+@media (min-width: 768px) {
+    .container { width: 750px; }
+    .carousel-item { width: 200px!important; }
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -150px;
+        visibility: hidden;
     }
+    .emoticon_text { width: 300px; }
+    .container .emoticon { padding: 0; width: 300px; }
 }
 
 @media (min-width: 992px) {
-    .container {
-        width: 750px;
+    .container { width: 750px; }
+    .carousel-item { height: 200px!important; }
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -50px;
+        visibility: hidden;
     }
+    .emoticon_text { width: 300px; }
+    .container .emoticon { padding: 0; width: 300px; }
 }
 
-@media (min-width: 768px) {
-    .container {
-        width: 750px;
+@media (min-width: 1200px) {
+    .container { width: 750px; }
+    .carousel-item { height: 200px!important; }
+    a.anchor {
+        display: block;
+        position: relative;
+        top: -50px;
+        visibility: hidden;
     }
+    .emoticon_text { width: 300px; }
+    .container .emoticon { padding: 0; width: 300px; }
 }
 
-.heart-icon { color: red; }
-
+.heart-icon { color: red; font-family: 'NanumGothic'; }
 
 /* Text inside navbar items */
 .nav-link {
@@ -42,7 +81,7 @@
 .hello {
     position: absolute;
     width: 100%;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -61,3 +100,15 @@
 }
 
 .spacetime > h1 { font-size: 4vmin; }
+
+.emoticon { margin-top: 30px; }
+.greeting { margin-top: 50px; }
+.greeting > h5 {
+    font-size: 3vmin;
+    line-height: 150%;
+}
+
+#gallery {
+    margin-top: 50px;
+}
+
