@@ -4,7 +4,8 @@
 	font-family:"NanumGothic";
 	src:url('/fonts/NanumGothic.eot');
 	src:url('/fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
-	    url('/fonts/NanumGothic.woff') format('woff'),
+        url('/fonts/NanumGothic.woff') format('woff'),
+        url('/fonts/NanumGothic.svg#NanumGothic') format('svg'),
 	    url('/fonts/NanumGothic.ttf') format('truetype');
     src:local(※), 
         url('/fonts/NanumGothic.woff') format('woff');
@@ -13,7 +14,8 @@
 	font-family:"Hanna";
 	src:url('/fonts/Hanna.eot');
 	src:url('/fonts/Hanna.eot?#iefix') format('embedded-opentype'),
-	    url('/fonts/Hanna.woff') format('woff'),
+        url('/fonts/Hanna.woff') format('woff'),
+        url('/fonts/Hanna.svg#Hanna') format('svg'),
 	    url('/fonts/Hanna.ttf') format('truetype');
     src:local(※), 
         url('/fonts/Hanna.woff') format('woff');
@@ -31,8 +33,12 @@ a.anchor {
 .emoticon_text { width: 150px; }
 .container .emoticon { padding: 0; width: 150px; }
 .carousel { display: flex; justify-content: center; align-items: center; }
-.carousel-inner { height: 400px; align-self: center; }
-.carousel-control-prev, .carousel-control-next { height: 100px; }
+/*.carousel-inner { height: 400px; align-self: center; }*/
+/*.carousel-control-prev, .carousel-control-next { height: 100px; }*/
+.hello > h1 { font-size: 20px; } /* Hello text in image */
+.contact-person > a > img { width: 70px; }
+.contact-person { font-size: 15px; color: black; }
+.nav-link { font-size: 12px; padding: 2px; } /* Text inside navbar items */
 
 /* Daum map */
 .location {
@@ -61,8 +67,12 @@ a.anchor {
     .emoticon_text { width: 300px; }
     .container .emoticon { padding: 0; width: 300px; }
     .carousel { display: flex; justify-content: center; align-items: center; }
-    .carousel-inner { height: 500px; align-self: center; }
-    .carousel-control-prev, .carousel-control-next { height: 300px; }
+    /*.carousel-inner { height: 500px; align-self: center; }*/
+    /*.carousel-control-prev, .carousel-control-next { height: 300px; }*/
+    .hello > h1 { font-size: 50px; } /* Hello text in image */
+    .nav-link { font-size: 15px; padding: 2px; } /* Text inside navbar items */
+    .contact-person > a > img { width: 100px; }
+    .contact-person { font-size: 20px; color: black; }
 
     /* Daum map */
     .location {
@@ -92,8 +102,8 @@ a.anchor {
     .emoticon_text { width: 300px; }
     .container .emoticon { padding: 0; width: 300px; }
     .carousel { display: flex; justify-content: center; align-items: center; }
-    .carousel-inner { height: 700px; align-self: center; }
-    .carousel-control-prev, .carousel-control-next { height: 400px; }
+    /*.carousel-inner { height: 700px; align-self: center; }*/
+    /*.carousel-control-prev, .carousel-control-next { height: 400px; }*/
 }
 
 @media (min-width: 1200px) {
@@ -107,16 +117,11 @@ a.anchor {
     .emoticon_text { width: 300px; }
     .container .emoticon { padding: 0; width: 300px; }
     .carousel { display: flex; justify-content: center; align-items: center; }
-    .carousel-inner { height: 700px; align-self: center; }
-    .carousel-control-prev, .carousel-control-next { height: 400px; }
+    /*.carousel-inner { height: 700px; align-self: center; }*/
+    /*.carousel-control-prev, .carousel-control-next { height: 400px; }*/
 }
 
 .heart-icon { color: red; }
-
-/* Text inside navbar items */
-.nav-link {
-    font-size: 2vmin;/*calc((-.3em + 1.2vmin) + (-.3em + 1.2vmax));*/
-}
 
 .container {
     text-align: center;
@@ -141,11 +146,6 @@ a.anchor {
     transform: translate(-50%, -50%);
 }
 
-/* Hello text in image */
-.hello > h1 {
-    font-size: 6vmin;/*calc((-.4em + 2.2vmin) + (-.4em + 2.2vmax));*/
-}
-
 /* Spacetime text in image */
 .spacetime {
     margin-top: 50px; 
@@ -159,11 +159,18 @@ a.anchor {
 .emoticon { margin-top: 30px; }
 .greeting { margin-top: 50px; }
 .greeting > h5 {
-    font-size: 3vmin;
+    font-size: 3.5vmin;
     line-height: 150%;
 }
 
 #gallery {
     margin-top: 50px;
+}
+
+.contacts {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
