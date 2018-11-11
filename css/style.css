@@ -5,10 +5,9 @@
     font-family: 'Hanna', serif;
 }
 
-.container { width: 250px; }
+.container { width: 300px; }
 .row { display: flex; justify-content: center; }
 .navbar-brand { margin-bottom: 3px; }
-.carousel-item { width: 200px!important; }
 a.anchor {
     display: block;
     position: relative;
@@ -17,10 +16,12 @@ a.anchor {
 }
 .emoticon_text { width: 150px; }
 .container .emoticon { padding: 0; width: 150px; }
+.carousel { display: flex; justify-content: center; align-items: center; }
+.carousel-inner { height: 400px; align-self: center; }
+.carousel-control-prev, .carousel-control-next { height: 100px; }
 
 @media (min-width: 768px) {
     .container { width: 750px; }
-    .carousel-item { width: 200px!important; }
     a.anchor {
         display: block;
         position: relative;
@@ -29,11 +30,13 @@ a.anchor {
     }
     .emoticon_text { width: 300px; }
     .container .emoticon { padding: 0; width: 300px; }
+    .carousel { display: flex; justify-content: center; align-items: center; }
+    .carousel-inner { height: 500px; align-self: center; }
+    .carousel-control-prev, .carousel-control-next { height: 300px; }
 }
 
 @media (min-width: 992px) {
     .container { width: 750px; }
-    .carousel-item { height: 200px!important; }
     a.anchor {
         display: block;
         position: relative;
@@ -42,11 +45,13 @@ a.anchor {
     }
     .emoticon_text { width: 300px; }
     .container .emoticon { padding: 0; width: 300px; }
+    .carousel { display: flex; justify-content: center; align-items: center; }
+    .carousel-inner { height: 700px; align-self: center; }
+    .carousel-control-prev, .carousel-control-next { height: 400px; }
 }
 
 @media (min-width: 1200px) {
     .container { width: 750px; }
-    .carousel-item { height: 200px!important; }
     a.anchor {
         display: block;
         position: relative;
@@ -55,6 +60,9 @@ a.anchor {
     }
     .emoticon_text { width: 300px; }
     .container .emoticon { padding: 0; width: 300px; }
+    .carousel { display: flex; justify-content: center; align-items: center; }
+    .carousel-inner { height: 700px; align-self: center; }
+    .carousel-control-prev, .carousel-control-next { height: 400px; }
 }
 
 .heart-icon { color: red; font-family: 'NanumGothic'; }
@@ -113,3 +121,17 @@ a.anchor {
     margin-top: 50px;
 }
 
+/* Daum map */
+.location {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+}
+.map {
+    width: 500px;
+    height: 400px;
+    align-self:center;
+}
