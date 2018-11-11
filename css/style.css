@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 * {
@@ -5,7 +6,7 @@
 }
 
 .container { width: 250px; }
-.row { display: inherit; }
+.row { display: flex; justify-content: center; }
 .navbar-brand { margin-bottom: 3px; }
 .carousel-item { width: 200px!important; }
 a.anchor {
