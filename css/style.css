@@ -1,5 +1,24 @@
 @charset "utf-8";
 
+@font-face {
+	font-family:"NanumGothic";
+	src:url('/fonts/NanumGothic.eot');
+	src:url('/fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
+	    url('/fonts/NanumGothic.woff') format('woff'),
+	    url('/fonts/NanumGothic.ttf') format('truetype');
+    src:local(※), 
+        url('/fonts/NanumGothic.woff') format('woff');
+}
+@font-face {
+	font-family:"Hanna";
+	src:url('/fonts/Hanna.eot');
+	src:url('/fonts/Hanna.eot?#iefix') format('embedded-opentype'),
+	    url('/fonts/Hanna.woff') format('woff'),
+	    url('/fonts/Hanna.ttf') format('truetype');
+    src:local(※), 
+        url('/fonts/Hanna.woff') format('woff');
+}
+
 .container { width: 300px; }
 .row { display: flex; justify-content: center; }
 .navbar-brand { margin-bottom: 3px; }
@@ -15,6 +34,22 @@ a.anchor {
 .carousel-inner { height: 400px; align-self: center; }
 .carousel-control-prev, .carousel-control-next { height: 100px; }
 
+/* Daum map */
+.location {
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+.map {
+    width: 100%;
+    height: 200px;
+    align-self:center;
+}
+
 @media (min-width: 768px) {
     .container { width: 750px; }
     a.anchor {
@@ -28,6 +63,22 @@ a.anchor {
     .carousel { display: flex; justify-content: center; align-items: center; }
     .carousel-inner { height: 500px; align-self: center; }
     .carousel-control-prev, .carousel-control-next { height: 300px; }
+
+    /* Daum map */
+    .location {
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-top: 50px;
+    }
+    .map {
+        width: 80%;
+        height: 400px;
+        align-self:center;
+    }
 }
 
 @media (min-width: 992px) {
@@ -116,18 +167,3 @@ a.anchor {
     margin-top: 50px;
 }
 
-/* Daum map */
-.location {
-    margin: 0 auto;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 50px;
-}
-.map {
-    width: 80%;
-    height: 400px;
-    align-self:center;
-}
