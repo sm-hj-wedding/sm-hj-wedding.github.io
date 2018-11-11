@@ -2,21 +2,21 @@
 
 @font-face {
 	font-family:"NanumGothic";
-	src:url('fonts/NanumGothic.eot');
-	src:url('fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
-        url('fonts/NanumGothic.woff') format('woff'),
-	    url('fonts/NanumGothic.ttf') format('truetype');
+	src:url('/fonts/NanumGothic.eot');
+	src:url('/fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/NanumGothic.woff') format('woff'),
+	    url('/fonts/NanumGothic.ttf') format('truetype');
     src:local(※), 
-        url('fonts/NanumGothic.woff') format('woff');
+        url('/fonts/NanumGothic.woff') format('woff');
 }
 @font-face {
 	font-family:"Hanna";
-	src:url('fonts/Hanna.eot');
-	src:url('fonts/Hanna.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Hanna.woff') format('woff'),
-	    url('fonts/Hanna.ttf') format('truetype');
+	src:url('/fonts/Hanna.eot');
+	src:url('/fonts/Hanna.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Hanna.woff') format('woff'),
+	    url('/fonts/Hanna.ttf') format('truetype');
     src:local(※), 
-        url('fonts/Hanna.woff') format('woff');
+        url('/fonts/Hanna.woff') format('woff');
 }
 
 .container { width: 300px; }
@@ -49,7 +49,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-top: 50px;
+    margin-top: 15px;
 }
 .map {
     width: 100%;
@@ -84,7 +84,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
         display: flex;
         justify-content: center;
         align-content: center;
-        margin-top: 50px;
+        margin-top: 15px;
     }
     .map {
         width: 80%;
@@ -152,7 +152,10 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     justify-content: center;
 }
 
-.spacetime > h1 { font-size: 4vmin; }
+.spacetime .title { margin-top: 0px; }
+.spacetime .content { margin-top: 15px; }
+.spacetime .title > h1 { font-size: 5vmin; font-weight: bold; }
+.spacetime .content > h1 { font-size: 4vmin; }
 
 .emoticon { margin-top: 30px; }
 .greeting { margin-top: 50px; }
@@ -161,12 +164,21 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     line-height: 150%;
 }
 
+.gallery-title { margin-top: 50px; }
+.gallery-title > h1 { font-size: 5vmin; font-weight: bold; color:black; }
+
+.location-title { margin-top: 50px; }
+.location-title > h1 { font-size: 5vmin; font-weight: bold; color:black; }
+
+.contacts-title { margin-top: 50px; }
+.contacts-title > h1 { font-size: 5vmin; font-weight: bold; color:black; }
+
 #gallery {
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 .contacts {
-    margin-top: 70px;
+    margin-top: 15px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
