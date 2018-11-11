@@ -1,49 +1,63 @@
-.center-items {
-    display: flex;
-    justify-content: center;    
+@media (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
 }
 
 .heart-icon { color: red; }
 
-/* Container holding the image and the text */
+
+/* Text inside navbar items */
+.nav-link {
+    font-size: 2vmin;/*calc((-.3em + 1.2vmin) + (-.3em + 1.2vmax));*/
+}
+
 .container {
     text-align: center;
     position: relative;
     color: white;
 }
 
-/* Bottom left text */
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+/* Container holding the image and the text */
+.main-image {
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
 }
 
-/* Top left text */
-.top-left {
+/* Hello text in image */
+.hello {
     position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
-/* Top right text */
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
-
-/* Centered text */
-.centered {
-    position: absolute;
-    top: 50%;
+    width: 100%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Hello text in image */
+.hello > h1 {
+    font-size: 6vmin;/*calc((-.4em + 2.2vmin) + (-.4em + 2.2vmax));*/
+}
+
+/* Spacetime text in image */
+.spacetime {
+    margin-top: 50px; 
+    color: black;
+    display: flex; 
+    justify-content: center;
+}
+
+.spacetime > h1 { font-size: 4vmin; }
