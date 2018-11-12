@@ -28,14 +28,17 @@ a.anchor {
     top: -120px;
     visibility: hidden;
 }
+.spacetime .content > h1 { font-size: 15px; }
 .emoticon_text { width: 150px; }
 .container .emoticon { padding: 0; width: 150px; }
-.carousel { display: flex; justify-content: center; align-items: center; }
+.greeting { margin-top: 50px; }
+.greeting > h5 { font-size: 13px; line-height: 150%; }
 .carousel-caption { padding: 0; font-size: 10px; color: black; 
     font-weight:bold; text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
 .carousel-caption > p { margin-bottom: 0px; }
 .carousel-caption > h3 { padding: 0; margin: 0; font-size: 12px; color: black; font-weight: bold; }
-.hello > h1 { font-size: 20px; } /* Hello text in image */
+.hello > h1 { font-size: 23px; color: #fa9fb5;
+    text-shadow: -2px 0 #ffffff, 0 2px #ffffff, 2px 0 #ffffff, 0 -2px #ffffff; } /* Hello text in image */
 .contact-person > a > img { width: 70px; }
 .contact-person { font-size: 15px; color: black; }
 .nav-link { font-size: 12px; padding: 2px; } /* Text inside navbar items */
@@ -65,13 +68,14 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
         top: -150px;
         visibility: hidden;
     }
+    .spacetime .content > h1 { font-size: 40px; }
+    .greeting > h5 { font-size: 30px; line-height: 150%; }
     .emoticon_text { width: 300px; }
     .container .emoticon { padding: 0; width: 300px; }
-    .carousel { display: flex; justify-content: center; align-items: center; }
     .carousel-caption { font-size: 15px; }
     .carousel-caption > p { margin-bottom: 0px; }
     .carousel-caption > h3 { font-size: 18px; }
-    .hello > h1 { font-size: 50px; } /* Hello text in image */
+    .hello > h1 { font-size: 70px; } /* Hello text in image */
     .nav-link { font-size: 15px; padding: 2px; } /* Text inside navbar items */
     .contact-person > a > img { width: 100px; }
     .contact-person { font-size: 20px; }
@@ -103,7 +107,6 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     }
     .emoticon_text { width: 300px; }
     .container .emoticon { padding: 0; width: 300px; }
-    .carousel { display: flex; justify-content: center; align-items: center; }
 }
 
 @media (min-width: 1200px) {
@@ -116,7 +119,6 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     }
     .emoticon_text { width: 300px; }
     .container .emoticon { padding: 0; width: 300px; }
-    .carousel { display: flex; justify-content: center; align-items: center; }
 }
 
 .heart-icon { color: red; }
@@ -139,7 +141,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 .hello {
     position: absolute;
     width: 100%;
-    top: 5%;
+    top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -153,16 +155,10 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 }
 
 .spacetime .title { margin-top: 0px; }
-.spacetime .content { margin-top: 15px; }
 .spacetime .title > h1 { font-size: 5vmin; font-weight: bold; }
-.spacetime .content > h1 { font-size: 4vmin; }
+.spacetime .content { margin-top: 15px; }
 
 .emoticon { margin-top: 30px; }
-.greeting { margin-top: 50px; }
-.greeting > h5 {
-    font-size: 3.5vmin;
-    line-height: 150%;
-}
 
 .gallery-title { margin-top: 50px; }
 .gallery-title > h1 { font-size: 5vmin; font-weight: bold; color:black; }
@@ -173,7 +169,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 .contacts-title { margin-top: 50px; }
 .contacts-title > h1 { font-size: 5vmin; font-weight: bold; color:black; }
 
-#gallery {
+#gallery-anchor {
     margin-top: 15px;
 }
 

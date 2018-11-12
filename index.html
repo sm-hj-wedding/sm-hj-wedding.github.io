@@ -18,18 +18,20 @@
   <!-- Custom stylesheet  -->
   <link rel="stylesheet" href="css/style.css">
   
-  <!-- 한글 폰트 -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
   <!--<link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
   <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">-->
   <style>
       * { font-family: 'Hanna'; }
       .heart-icon { font-family: 'NanumGothic'; }
+      .hello > h1 { font-family: 'Pacifico', cursive; }
   </style>
   </head>
 
     <body>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fae0dd;">
         <div class="container">
           <!-- Brand -->
           <a class="navbar-brand" href="#">성민<b class="heart-icon" href="#">♥</b>현지</a>
@@ -46,7 +48,7 @@
                 <a class="nav-link" href="#spacetime">시공간</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#gallery">갤러리</a>
+                <a class="nav-link" href="#gallery-anchor">갤러리</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link" href="#location">오시는 길</a>
@@ -60,12 +62,14 @@
       </nav>
       <div class="main-image">
         <img src="images/studio3_750px.jpg" alt="Snow" style="width:100%;">
-        <div class="hello" id="hello"><h1>우리 결혼합니다!</h1></div>
+        <!--<div class="hello" id="hello"><h1>우리 결혼합니다!</h1></div>-->
+        <div class="hello" id="hello"><h1>You're Invited</h1></div>
       </div>
       <a class="anchor" id="spacetime"></a>
       <div class="spacetime" style="display: inline-block">
         <div class="spacetime title"><h1>- 시간/장소 -</h1></div>
-        <div class="spacetime content"><h1>12월 23일 오후 1시 30분<br>서울대학교 교수회관 2층 컨벤션홀</h1></div>
+        <div class="spacetime content"><h1>12월 23일 일요일 오후 1시 30분
+            <br>서울대학교 교수회관 2층 컨벤션홀</h1></div>
       </div>
       <div class="container emoticon">
         <img class="emoticon_text" src="images/emoticon_text.png" />
@@ -79,7 +83,7 @@
             하나 되어 한 길을 가고자 합니다.<br>
             함께 자리하시어 축복해 주시기 바랍니다.<br></h5>
       </div>
-      <a class="anchor" id="gallery"></a>
+      <a class="anchor" id="gallery-anchor"></a>
       <div class="gallery-wrapper">
         <div class="gallery-title">
           <h1>- 갤러리 -</h1>
@@ -154,7 +158,10 @@
           <h1>- 오시는 길 -</h1>
         </div>
         <div class="location" id="location">
-          <div class="map" id="map"></div>
+          <!--<a href="http://map.daum.net/link/to/서울대학교교수회관,37.4578233,126.9538927">-->
+          <a href="http://map.daum.net/?eX=489802&eY=1099560&eName=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80">
+            <div class="map" id="map"></div>
+          </a>
         </div>
       </div>
 
