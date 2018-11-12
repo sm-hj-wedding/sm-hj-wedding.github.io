@@ -19,7 +19,7 @@
         url('/fonts/Hanna.woff') format('woff');
 }
 
-.container { width: 300px; }
+.container { width: 350px; }
 .row { display: flex; justify-content: center; }
 .navbar-brand { margin-bottom: 3px; }
 a.anchor {
@@ -29,8 +29,8 @@ a.anchor {
     visibility: hidden;
 }
 .spacetime .content > h1 { font-size: 15px; }
-.emoticon_text { width: 150px; }
-.container .emoticon { padding: 0; width: 150px; }
+.emoticon_text { width: 200px; }
+.container .emoticon { padding: 0; width: 200px; }
 .greeting { margin-top: 50px; }
 .greeting > h5 { font-size: 13px; line-height: 150%; }
 .carousel-caption { padding: 0; font-size: 10px; color: black; 
@@ -43,6 +43,9 @@ a.anchor {
 .contact-person { font-size: 15px; color: black; }
 .nav-link { font-size: 12px; padding: 2px; } /* Text inside navbar items */
 ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
+.spacetime > path {
+    width: 20; height: 20;
+}
 
 /* Daum map */
 .location {
@@ -58,6 +61,10 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     width: 100%;
     height: 250px;
     align-self:center;
+}
+.map-url {
+    margin-top: 10px;
+    font-size: 15px;
 }
 
 @media (min-width: 768px) {
@@ -79,6 +86,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     .nav-link { font-size: 15px; padding: 2px; } /* Text inside navbar items */
     .contact-person > a > img { width: 100px; }
     .contact-person { font-size: 20px; }
+    .map-url { font-size: 25px; }
 
     /* Daum map */
     .location {
@@ -157,17 +165,21 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 .spacetime .title { margin-top: 0px; }
 .spacetime .title > h1 { font-size: 5vmin; font-weight: bold; }
 .spacetime .content { margin-top: 15px; }
+.spacetime img { width: 4.5vmin; height: 4.5vmin; margin-bottom: 1vmin; margin-right: 0.5vmin; }
 
 .emoticon { margin-top: 30px; }
 
 .gallery-title { margin-top: 50px; }
 .gallery-title > h1 { font-size: 5vmin; font-weight: bold; color:black; }
+.gallery-title img { width: 4.5vmin; height: 4.5vmin; margin-bottom: 1vmin; margin-right: 0.5vmin; }
 
 .location-title { margin-top: 50px; }
 .location-title > h1 { font-size: 5vmin; font-weight: bold; color:black; }
+.location-title img { width: 4.2vmin; height: 4.2vmin; margin-bottom: 0.2vmin; margin-right: 0.7vmin; }
 
 .contacts-title { margin-top: 50px; }
 .contacts-title > h1 { font-size: 5vmin; font-weight: bold; color:black; }
+.contacts-title img { width: 4.2vmin; height: 4.2vmin; margin-bottom: 1vmin; margin-right: 0.5vmin; }
 
 #gallery-anchor {
     margin-top: 15px;

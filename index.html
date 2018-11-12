@@ -22,6 +22,8 @@
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
   <!--<link href="http://fonts.googleapis.com/earlyaccess/hanna.css" rel="stylesheet">
   <link href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css" rel="stylesheet">-->
+
+  <!-- Glyph js -->
   <style>
       * { font-family: 'Hanna'; }
       .heart-icon { font-family: 'NanumGothic'; }
@@ -67,7 +69,7 @@
       </div>
       <a class="anchor" id="spacetime"></a>
       <div class="spacetime" style="display: inline-block">
-        <div class="spacetime title"><h1>- 시간/장소 -</h1></div>
+        <div class="spacetime title"><h1><img src="svg/si-glyph-clock.svg"/>시간/장소</h1></div>
         <div class="spacetime content"><h1>12월 23일 일요일 오후 1시 30분
             <br>서울대학교 교수회관 2층 컨벤션홀</h1></div>
       </div>
@@ -86,7 +88,7 @@
       <a class="anchor" id="gallery-anchor"></a>
       <div class="gallery-wrapper">
         <div class="gallery-title">
-          <h1>- 갤러리 -</h1>
+          <h1><img src="svg/si-glyph-camera.svg"/>갤러리</h1>
         </div>
         <div id="gallery" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -155,20 +157,27 @@
       <a class="anchor" id="location"></a>
       <div class="location-wrapper">
         <div class="location-title">
-          <h1>- 오시는 길 -</h1>
+          <h1><img src="svg/si-glyph-pin-location-map.svg"/>오시는 길</h1>
         </div>
         <div class="location" id="location">
           <!--<a href="http://map.daum.net/link/to/서울대학교교수회관,37.4578233,126.9538927">-->
-          <a href="http://map.daum.net/?eX=489802&eY=1099560&eName=%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90%EA%B5%90%EC%88%98%ED%9A%8C%EA%B4%80">
-            <div class="map" id="map"></div>
-          </a>
+              <div class="map" id="map"></div>
         </div>
+        <a class="btn btn-primary map-url"
+          href="http://map.daum.net/link/to/서울대학교교수회관,37.4578233,126.9538927" 
+          target="_blank">
+          다음 지도로 연결
+        </a>
+        <a class="btn btn-info map-url" data-toggle="popover" title="전세버스 안내" 
+          data-content="12월 23일 11시에, 원주따뚜공연장 주차장 (강원 원주시 단구로 170)에서 출발">
+          원주에서 출발하시면 클릭
+        </a>
       </div>
 
       <a class="anchor" id="contacts"></a>
       <div class="contacts-wrapper">
         <div class="contacts-title">
-          <h1>- 연락하기 -</h1>
+          <h1><img src="svg/si-glyph-contact-book.svg"/>연락하기</h1>
         </div>      
         <div class="contacts" id="contacts">
             <div class="contact-person">
@@ -189,5 +198,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c449cf08b655318584b7b9e603e2bc6a"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+    $(document).ready(function(){
+            $('[data-toggle="popover"]').popover(); 
+    });
+    </script>
 
     </body>
