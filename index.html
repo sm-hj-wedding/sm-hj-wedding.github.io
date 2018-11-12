@@ -33,6 +33,8 @@
 
     <body>
     <div class="container">
+
+      <!-- Navigation bar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #fae0dd;">
         <div class="container">
           <!-- Brand -->
@@ -62,9 +64,10 @@
           </div> 
         </div>
       </nav>
+
+      <!-- Landing -->
       <div class="main-image">
         <img src="images/studio3_750px.jpg" alt="Snow" style="width:100%;">
-        <!--<div class="hello" id="hello"><h1>우리 결혼합니다!</h1></div>-->
         <div class="hello" id="hello"><h1>You're Invited</h1></div>
       </div>
       <a class="anchor" id="spacetime"></a>
@@ -85,6 +88,8 @@
             하나 되어 한 길을 가고자 합니다.<br>
             함께 자리하시어 축복해 주시기 바랍니다.<br></h5>
       </div>
+
+      <!-- Gallery -->
       <a class="anchor" id="gallery-anchor"></a>
       <div class="gallery-wrapper">
         <div class="gallery-title">
@@ -154,6 +159,7 @@
         </div>
       </div>
 
+      <!-- Location: Daum map API -->
       <a class="anchor" id="location"></a>
       <div class="location-wrapper">
         <div class="location-title">
@@ -169,29 +175,66 @@
           다음 지도로 연결
         </a>
         <a class="btn btn-info map-url" data-toggle="popover" title="전세버스 안내" 
-          data-content="12월 23일 11시에, 원주따뚜공연장 주차장 (강원 원주시 단구로 170)에서 출발">
-          원주에서 출발하시면 클릭
+          data-content="12월 23일 11시에, <br>원주따뚜공연장 주차장 <br>(강원 원주시 단구로 170)에서 출발"
+          data-html="true">
+          원주 출발 손님 안내
         </a>
       </div>
 
+      <!-- Contacts -->
       <a class="anchor" id="contacts"></a>
       <div class="contacts-wrapper">
         <div class="contacts-title">
           <h1><img src="svg/si-glyph-contact-book.svg"/>연락하기</h1>
         </div>      
         <div class="contacts" id="contacts">
-            <div class="contact-person">
-              신랑에게<br>
-              <a href="http://qr.kakao.com/talk/3TVzkmti.3hfhp5gNq4uBKTZ.H8-"><img src="images/contact-groom.png"/></a>
+            <div class="dropdown"> <!-- Groom -->
+              <button class="btn btn-primary dropdown-toggle to-groom" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                신랑에게
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="tel:821031357401">
+                  <img src="svg/si-glyph-call.svg"/>전화하기
+                </a>
+                <a class="dropdown-item" href="http://qr.kakao.com/talk/3TVzkmti.3hfhp5gNq4uBKTZ.H8-">
+                  <img src="svg/si-glyph-bubble-message-hi.svg"/>카톡하기
+                </a>
+              </div>
             </div>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div class="contact-person">
-              신부에게<br>
-              <a href="http://qr.kakao.com/talk/3TVzkmti.3hfhp5gNq4uBKTZ.H8-"><img src="images/contact-bride.png"/></a>
+            <div class="dropdown"> <!-- Bride -->
+              <button class="btn btn-danger dropdown-toggle to-bride" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                신부에게
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="tel:821071277019">
+                  <img src="svg/si-glyph-call.svg"/>전화하기
+                </a>
+                <a class="dropdown-item" href="http://qr.kakao.com/talk/giKbvovfQX2EbuT0jXY211ML.LM-">
+                  <img src="svg/si-glyph-bubble-message-hi.svg"/>카톡하기
+                </a>
+              </div>
             </div>
+        </div>
+        <!-- Facebook event button -->
+        <div class="contacts-facebook">
+          <a href="https://m.facebook.com/events/332823614185858/?ti=ia" target="_blank">
+            <button class="btn btn-primary facebook-button" type="button"><img src="images/facebook-icon.jpg"/>페이스북 이벤트 댓글 달기</button>
+          </a>          
         </div>
       </div>
     </div> <!-- Main container div -->
+
+    <footer class="footer">
+      <div class="footer-items-wrapper">
+        <span class="text-muted" font-family: 'Pacifico', cursive">Thank you</span>
+        <span class="text-muted">
+          Copyright (c) 2018
+          <span style="color:blue">신랑</span>&amp;<span style="color:red">신부</span>
+        </span>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
