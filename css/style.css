@@ -124,12 +124,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 
     /* Contacts */
     .to-groom, .to-groom:active .to-groom:focus { font-size: 25px; }
-
     .to-bride, .to-bride:active .to-bride:focus { font-size: 25px; }
-      background-color: red; 
-      border-color: red; 
-      outline-color: red; 
-    }
     .to-bride:hover { background-color: #dc3545; }
 
     .facebook-button { font-size: 25px; }
