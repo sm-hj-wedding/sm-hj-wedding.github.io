@@ -19,6 +19,7 @@
         url('/fonts/Jua.woff') format('woff');
 }
 
+/* Default settings: for small devices */
 .container { width: 100%; padding: 0px; } /* Fit container width to device width */
 .row { display: flex; justify-content: center; }
 .navbar-brand { margin-bottom: 3px; }
@@ -30,7 +31,8 @@ a.anchor {
 }
 .spacetime .content > h1 { font-size: 15px; }
 .emoticon_text { width: 200px; margin: 0; }
-.container .emoticon { padding: 0; margin-top:0px!important; margin-bottom:30px; width: 200px; display: block; margin-left: auto; margin-right: auto;}
+.container .emoticon { padding: 0; margin-top:0px!important; margin-bottom:30px; width: 200px; 
+    display: block; margin-left: auto; margin-right: auto;}
 .greeting { margin-top: 30px; }
 .greeting > h5 { font-size: 13px; line-height: 150%; color:grey; }
 .carousel-caption { padding: 0; font-size: 10px; color: black; 
@@ -45,8 +47,6 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 .spacetime > path {
     width: 20; height: 20;
 }
-
-/* Daum map */
 .location {
     margin: 0 auto;
     width: 100%;
@@ -55,6 +55,9 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     justify-content: center;
     align-content: center;
     margin-top: 15px;
+}
+.route > img {
+    width: 100%;;
 }
 .map {
     width: 100%;
@@ -66,7 +69,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     font-size: 15px;
 }
 
-/* Contacts */
+/* Default settings: Contacts */
 .to-groom, .to-groom:active .to-groom:focus { 
     background-color: blue; 
     border-color: blue; 
@@ -84,6 +87,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 .facebook-button { background-color: #3f5b95; border-color: #3f5b95; }
 .facebook-button > img { width: 20px; height: 20px; margin-bottom: 5px; margin-right: 10px; }
 
+/* For devices width >= 768px */
 @media (min-width: 768px) {
     .container { width: 750px; }
     a.anchor {
@@ -131,16 +135,20 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 
 }
 
+/* For devices width >= 992px */
 @media (min-width: 992px) {
     .container { width: 750px; }
 }
 
+/* For devices width >= 1200px */
 @media (min-width: 1200px) {
     .container { width: 750px; }
 }
 
+/* Heart icon in navbar-brand */
 .heart-icon { color: red; }
 
+/* Main container */
 .container {
     text-align: center;
     position: relative;
@@ -172,30 +180,47 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     justify-content: center;
 }
 
+/* Spacetime text */
 .spacetime .title { margin-top: 0px; }
 .spacetime .title > h1 { font-size: 5vmin; }
 .spacetime .content { margin-top: 15px; }
 .spacetime img { width: 4.5vmin; height: 4.5vmin; margin-bottom: 1vmin; margin-right: 0.5vmin; }
 
+/* Beni emoticon */
 .emoticon { margin-top: 30px; }
 
+/* Gallery */
 .gallery-title { margin-top: 50px; }
 .gallery-title > h1 { font-size: 5vmin; color:black; }
 .gallery-title img { width: 4.5vmin; height: 4.5vmin; margin-bottom: 1vmin; margin-right: 0.5vmin; }
+#gallery-anchor {
+    margin-top: 15px;
+}
+
+/* Map/location */
+.route-text { text-align: left; color: black; }
+.route-specific { margin-left: 15px; margin-right: 15px; }
 
 .location-title { margin-top: 50px; }
 .location-title > h1 { font-size: 5vmin; color:black; }
 .location-title img { width: 4.2vmin; height: 4.2vmin; margin-bottom: 0.2vmin; margin-right: 0.7vmin; }
 
+/* Route text */
+/*i.fa {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px #888;
+    padding: 0.5em 0.6em;  
+}*/
+.route-text > i.fa { margin-right: 5px; } 
+
+/* Contacts */
 .contacts-title { margin-top: 50px; }
 .contacts-title > h1 { font-size: 5vmin; color:black; }
 .contacts-title img { width: 4.2vmin; height: 4.2vmin; margin-bottom: 1vmin; margin-right: 0.5vmin; }
 
+/* Contacts - phone and bubble icon */
 .dropdown-item img { width: 2.5vmin; height: 2.5vmin; margin-bottom: 0.1vmin; margin-right: 0.3vmin; }
-
-#gallery-anchor {
-    margin-top: 15px;
-}
 
 .contacts {
     margin-top: 15px;
@@ -208,10 +233,12 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     margin: 5px;
 }
 
+/* Popover window header */
 h3.popover-header {
     font-family: "Jua";
 }
 
+/* Footer */
 footer {
     display: flex;
     justify-content: center;
