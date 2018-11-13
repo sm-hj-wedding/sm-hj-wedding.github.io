@@ -19,7 +19,7 @@
         url('/fonts/Jua.woff') format('woff');
 }
 
-.container { width: 320px; }
+.container { width: 100%; padding: 0px; } /* Fit container width to device width */
 .row { display: flex; justify-content: center; }
 .navbar-brand { margin-bottom: 3px; }
 a.anchor {
