@@ -29,12 +29,26 @@ a.anchor {
     top: -120px;
     visibility: hidden;
 }
+
+/* Family info */
+.families { display: flex; justify-content: center; color: black; margin-top: 20px; }
+.familiy { display: flex; justify-content: center; margin: 10px; }
+.parents { display: flex; justify-content: center; margin: 10px 10px 0px 10px; }
+.parent { text-align: left; margin: 7px; }
+.parent > h6 { color: grey; font-size: 13px; margin-bottom: 0px; }
+.parent > h5 { margin-bottom: 0px; }
+.parent-dot > h5 { padding-top: 3px; }
+.groom { text-align: left; margin-bottom: 0px; margin-left: 60px; }
+.groom > h6 { color: grey; font-size: 13px; margin-bottom: 0px; }
+.bride { text-align: left; margin-bottom: 0; margin-left: 60px; }
+.bride > h6 { color: grey; font-size: 13px; margin-bottom: 0px; }
+
 .spacetime .content > h1 { font-size: 15px; }
 .emoticon_text { width: 200px; margin: 0; }
 .container .emoticon { padding: 0; margin-top:0px!important; margin-bottom:30px; width: 200px; 
     display: block; margin-left: auto; margin-right: auto;}
 .greeting { margin-top: 30px; }
-.greeting > h5 { font-size: 13px; line-height: 150%; color:grey; }
+.greeting > h5 { font-size: 15px; line-height: 150%; color:grey; }
 .carousel-caption { padding: 0; font-size: 10px; color: black; 
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
 .carousel-caption > p { margin-bottom: 0px; }
@@ -96,6 +110,22 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
         top: -150px;
         visibility: hidden;
     }
+
+    /* Family info */
+    .families { display: flex; justify-content: center; color: black; margin-top: 20px; }
+    .familiy { display: flex; justify-content: center; margin: 10px; }
+    .parents { display: flex; justify-content: center; margin: 20px 20px 0px 20px; }
+    .parent { text-align: left; margin: 7px; }
+    .parent > h6 { color: grey; font-size: 18px; margin-bottom: 0px; }
+    .parent > h5 { margin-bottom: 0px; font-size: 40px }
+    .parent-dot > h5 { font-size: 30px; padding-top: 20px; }
+    .groom { text-align: left; margin-bottom: 0px; margin-left: 102px; }
+    .groom > h6 { color: grey; font-size: 18px; margin-bottom: 0px; }
+    .groom > h5 { font-size: 40px; }
+    .bride { text-align: left; margin-bottom: 0; margin-left: 102px; }
+    .bride > h6 { color: grey; font-size: 18px; margin-bottom: 0px; }
+    .bride > h5 { font-size: 40px; }
+
     .spacetime .content > h1 { font-size: 40px; }
     .greeting > h5 { font-size: 30px; line-height: 150%; }
     .emoticon_text { width: 300px; }
@@ -108,6 +138,8 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     .contact-person > a > img { width: 100px; }
     .contact-person { font-size: 20px; }
     .map-url { font-size: 25px; }
+
+    .route-text-wrapper { font-size: 30px; }
 
     /* Daum map */
     .location {
@@ -199,20 +231,20 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 
 /* Map/location */
 .route-text { text-align: left; color: black; }
-.route-specific { margin-left: 15px; margin-right: 15px; }
+.route-specific { margin-left: 5px; }
 
 .location-title { margin-top: 50px; }
 .location-title > h1 { font-size: 5vmin; color:black; }
 .location-title img { width: 4.2vmin; height: 4.2vmin; margin-bottom: 0.2vmin; margin-right: 0.7vmin; }
 
 /* Route text */
-/*i.fa {
-    display: inline-block;
-    border-radius: 60px;
-    box-shadow: 0px 0px 2px #888;
-    padding: 0.5em 0.6em;  
-}*/
-.route-text > i.fa { margin-right: 5px; } 
+.route-specific-wrapper { display: flex; justify-content: center; }
+.route-text > i.fa { margin-right: 5px; }
+.route-specific > i.fa.fa-bus { color: #588c7e; }
+.route-specific > i.fa.fa-car { color: #f2ae72; }
+.route-specific > i.fa.fa-check { color: #f2e394; }
+.route-specific > i.fas.fa-info-circle { color: rgb(114, 167, 207); font-size: 14px; margin-left: 18px; margin-right: 6px; margin-top: 5px; }
+.route-specific > i.far.fa-smile { color: black; font-size: 14px; margin-left: 5px; margin-top: 5px; }
 
 /* Contacts */
 .contacts-title { margin-top: 50px; }
