@@ -68,7 +68,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 
 /* Contacts */
 .to-groom, .to-groom:active .to-groom:focus { 
-    background-color: ; 
+    background-color: blue; 
     border-color: blue; 
     outline: blue; 
 }
