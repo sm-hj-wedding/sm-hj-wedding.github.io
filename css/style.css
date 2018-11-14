@@ -100,7 +100,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 
 .facebook-button { background-color: #3f5b95; border-color: #3f5b95; }
 .facebook-button > img { width: 20px; height: 20px; margin-bottom: 5px; margin-right: 10px; }
-.contacts-facebook .button > a:hover { text-decoration: none; }
+.facebook-button > a { text-decoration: none; }
 
 /* For devices width >= 768px */
 @media (min-width: 768px) {
