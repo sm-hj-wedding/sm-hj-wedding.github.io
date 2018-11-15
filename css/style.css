@@ -71,7 +71,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
     margin-top: 15px;
 }
 .route > img {
-    width: 100%;;
+    width: 100%;
 }
 .map {
     width: 100%;
@@ -244,7 +244,7 @@ ol.carousel-indicators { bottom: 0px; margin-bottom: 7px; }
 .route-specific > i.fa.fa-bus { color: #588c7e; }
 .route-specific > i.fa.fa-car { color: #f2ae72; }
 .route-specific > i.fa.fa-check { color: #f2e394; }
-.route-specific > i.fas.fa-info-circle { color: rgb(114, 167, 207); font-size: 14px; margin-left: 18px; margin-right: 6px; margin-top: 5px; }
+.route-specific > i.fas.fa-info-circle { color: rgb(114, 167, 207); margin-left: 18px; margin-right: 6px; margin-top: 5px; }
 .route-specific > i.far.fa-smile { color: black; font-size: 14px; margin-left: 5px; margin-top: 5px; }
 
 /* Contacts */
